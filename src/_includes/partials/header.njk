@@ -1,0 +1,5 @@
+<nav>
+  <h1>{{ "/src/img/logos/ciy.svg" | svgContents | safe }}</h1>
+  <div class="event">{{ "/src/img/logos/move.svg" | svgContents | safe }}{{ events.title.rendered }} | {{ events.acf.location }} | {% humanDateRange events.acf.start_date, events.acf.end_date %}</div>
+  <div></div>
+</nav>

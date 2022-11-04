@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+title: Select an Event
+---
+
+<ul>
+{% for event in events %}
+  <li><a href="/events/{{event.slug}}">{{event.title.rendered}}</a></li>
+{% endfor %}
+  </ul>

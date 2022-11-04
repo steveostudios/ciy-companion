@@ -1,0 +1,78 @@
+<ul class="menu">
+  {% if events.acf.day %}<li>
+    {{ "/src/img/icons/calendar.svg" | svgContents | safe }}
+    <p>Schedule</p>
+  </li>
+  {% endif %}
+  <li>
+    {{ "/src/img/icons/couch.svg" | svgContents | safe }}
+    <p>Seating Chart</p>
+  </li>
+  <li>
+    {{ "/src/img/icons/map.svg" | svgContents | safe }}
+    <p>Campus Map</p>
+  </li>
+  <li>
+    {{ "/src/img/icons/address-book.svg" | svgContents | safe }}
+    <p>Event Contact</p>
+  </li>
+  {% if events.acf.damage_report %}
+  <li>
+    {{ "/src/img/icons/tools.svg" | svgContents | safe }}
+    <p>Damage Report</p>
+  </li>
+  {% endif %}
+  <li>
+    {{ "/src/img/icons/shirt.svg" | svgContents | safe }}
+    <p>Store</p>
+  </li>
+  <li>
+    {{ "/src/img/icons/phone.svg" | svgContents | safe }}
+    <p>Campus Contacts</p>
+  </li>
+  {% if events.acf.convos %}
+  <li>
+    <a href="/pages/convos">
+      {{ "/src/img/icons/comments.svg" | svgContents | safe }}
+      <p>Convos</p>
+    </a>
+  </li>
+  {% endif %}
+  {% if events.acf.selah %}
+  <li>
+   <a href="/pages/selah">
+      {{ "/src/img/icons/cloud.svg" | svgContents | safe }}
+      <p>SELAH</p>
+    </a>
+  </li>
+  {% endif %}
+  {% if events.acf.youth_group_time_questions %}
+  <li>
+    {{ "/src/img/icons/question-box.svg" | svgContents | safe }}
+    <p>Youth Group Time Questions</p>
+  </li>
+  {% endif %}
+  {% if events.acf.tournament_rules %}<li>
+    {{ "/src/img/icons/whistle.svg" | svgContents | safe }}
+    <p>Tournament Rules</p>
+  </li>
+  {% endif %}
+  {% if events.acf.beyond_the_event %}
+  <li>
+    {{ "/src/img/icons/crown.svg" | svgContents | safe }}
+    <p>Beyond the Event</p>
+  </li>
+  {% endif %}
+  <li>
+    <a href="/">
+    {{ "/src/img/icons/sign-out.svg" | svgContents | safe }}
+    <p>Sign Out</p>
+    </a>
+  </li>
+  <li>
+    <a href="/pages/connect">
+    {{ "/src/img/icons/share.svg" | svgContents | safe }}
+    <p>Connect</p>
+    </a>
+  </li>
+</ul>

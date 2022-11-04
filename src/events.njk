@@ -1,0 +1,13 @@
+---
+pagination:
+    data: events
+    size: 1
+    alias: events
+permalink: "events/{{ events.title.rendered | slug }}/"
+layout: layouts/base.njk
+---
+
+<div class="mainContent">
+    {{events.content.rendered | safe}}
+    {% include "partials/menu.njk" %}
+</div>

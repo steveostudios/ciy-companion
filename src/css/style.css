@@ -1,0 +1,48 @@
+@import url("header.css");
+@import url("menu.css");
+
+:root {
+  --primary-color: #e9a20a;
+  --blue: #2C7CCF;
+  --black: #000;
+  --white: #f6f7f8;
+  --trim: #cfd8d1;
+  --grey: #9f9f9f;
+  --dark-grey: #454545;
+  --move-primary: #BCD530;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;  
+  background-color: var(--dark-grey);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  background-image: url("/img/bg.png");
+  background-size: cover;
+  background-position: center center;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+  width: 320px;
+  max-width: 640px;
+  height: inherit;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
