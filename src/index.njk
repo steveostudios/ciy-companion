@@ -1,10 +1,17 @@
 ---
 layout: layouts/base.njk
 title: CIY Companion
+pageType: initial
 ---
-
+<h1>Choose an Event</h1>
 <ul>
-<li><a href="/move">Move</a></li>
-<li><a href="/mix">Mix</a></li>
-<li><a href="/superstart">SuperStart</a></li>
+  <li>
+    <a href="/pages/eventSelector">{{ "/src/img/logos/move.svg" | svgContents | safe }}</a>
+  </li>
+  <li>
+    <a href="/mix">{{ "/src/img/logos/mix.svg" | svgContents | safe }}</a>
+  </li>
+  <li>
+    <a href="/superstart">{{ "/src/img/logos/superstart.svg" | svgContents | safe }}</a>
+  </li>
 </ul>

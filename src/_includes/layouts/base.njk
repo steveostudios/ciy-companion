@@ -7,16 +7,25 @@
     <title>{{ events.title.rendered }}</title>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-
-
+    <link rel="manifest" href="/blog/assets/manifest.json" />
+    <script>
+      // Only register the service worker when not on localhost.
+      if (location.hostname !== 'localhost' && 'serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/js/service-worker.js');
+        });
+      }
+    </script>
   </head>
-  <body>
+  <body class="{{pageType}}">
     {% include "partials/header.njk" %}
     {% if subtitle %}
       {% include "partials/subheader.njk" %}
     {% endif %}
-    <div class="content">
-    {{ content | safe }}
-    </div>
+    <main>
+      <div class="content">
+        {{ content | safe }}
+      </div>
+    </main>
   </body>
 </html>

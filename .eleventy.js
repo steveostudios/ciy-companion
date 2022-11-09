@@ -1,9 +1,22 @@
 const svgContents = require("eleventy-plugin-svg-contents");
+const fs = require("fs")
 
 module.exports = function (eleventyConfig) {
   require("dotenv").config();
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+
+   // Create JSON file that is read by service-worker.js.
+  //  let files = fs.readdirSync('_site/assets');
+  //  files = files.map(file => '/blog/assets/' + file);
+  //  files.push('/blog/'); // cache the start URL (Lighthouse wants this)
+  //  const timestamp = Date.now();
+  //  const serviceWorkerData = {files, timestamp};
+  //  fs.writeFileSync(
+  //    '_site/service-worker-data.json',
+  //    JSON.stringify(serviceWorkerData)
+  //  );
+  //  console.log('wrote service-worker-data.json with timestamp', timestamp);
 
   eleventyConfig.addPlugin(svgContents);
 

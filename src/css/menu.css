@@ -3,13 +3,13 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(10,100px);
+  grid-template-columns: repeat(3, 13rem);
+  grid-auto-rows: 13rem;
   gap: 1rem;
 }
 
 .menu li {
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,0.75);
   display: flex;
   width: inherit;
   height: inherit;
@@ -19,4 +19,16 @@
   padding: 0.5rem;
   font-size: 10px;
   text-align: center;
+  pointer: default;
+}
+
+.menu li a {
+  width: inherit;
+  height: inherit;
+}
+
+.menu li a p {
+  margin-top: 1rem;
+  /* not working */
+  pointer: normal; 
 }

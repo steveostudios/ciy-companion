@@ -1,0 +1,50 @@
+/* Initial */
+.initial h1 {
+  font-family: "Pragmatica Extended", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.initial ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--white);
+}
+
+.initial ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  width: 100%;
+  height: inherit;
+}
+
+.initial ul li a:hover {
+  background-color: var(--white);
+}
+
+.initial ul li a svg  {
+  height: 6rem;
+  width: auto;
+}
+
+.initial ul li a:hover svg .fill  {
+  fill: var(--black);
+}
+
+/* App Pages */
+.app .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.app .header .store-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
